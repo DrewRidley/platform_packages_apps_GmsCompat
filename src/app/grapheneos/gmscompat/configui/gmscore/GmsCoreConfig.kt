@@ -81,6 +81,11 @@ class GmsCoreConfigFragment : BaseGosConfigFragment(
                 R.string.gmscore_icc_auth_perms_title,
                 R.string.gmscore_icc_auth_perms_confirm,
             )
+            addPkgFlagPerm(
+                this, GmsCorePackageFlag.GRANT_PERMS_FOR_UWB_PRIVILEGED,
+                R.string.gmscore_uwb_privileged_perms_title,
+                R.string.gmscore_uwb_privileged_perms_confirm,
+            )
         }
 
         screen.addCategory(R.string.rcs_activation_category).apply {
