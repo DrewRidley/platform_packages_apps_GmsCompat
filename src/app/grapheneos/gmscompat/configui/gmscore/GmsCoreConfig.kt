@@ -86,6 +86,11 @@ class GmsCoreConfigFragment : BaseGosConfigFragment(
                 R.string.gmscore_uwb_privileged_perms_title,
                 R.string.gmscore_uwb_privileged_perms_confirm,
             )
+            addPkgFlagPerm(
+                this, GmsCorePackageFlag.GRANT_PERMS_FOR_BLUETOOTH_PRIVILEGED,
+                R.string.gmscore_bluetooth_privileged_perms_title,
+                R.string.gmscore_bluetooth_privileged_perms_confirm,
+            )
         }
 
         screen.addCategory(R.string.rcs_activation_category).apply {
