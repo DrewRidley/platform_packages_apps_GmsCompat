@@ -225,6 +225,22 @@ Ultra-wideband cannot discover devices on its own. It measures distance to a dev
 "
 </string>
 
+    <string name="gmscore_bluetooth_privileged_perms_title">Allow privileged Bluetooth access</string>
+    <string name="gmscore_bluetooth_privileged_perms_confirm">
+"This permission allows Google Play services to:
+
+• Read and write the stored settings of paired Bluetooth devices
+
+Accessories that pair closely with your phone use these stored settings to describe themselves — their type, their capabilities, and how the phone should work with them. Earbuds that report battery per side, watches, hearing aids, and Fast Pair accessories all rely on it, as do car keys, which read it while agreeing with the vehicle on how to measure distance before ultra-wideband ranging can begin.
+
+Without this permission, those exchanges fail. For a car key that means hands-free trunk access and left-behind detection never start, even if ultra-wideband ranging is already allowed above.
+
+This applies to devices you have already paired. It does not allow scanning for new devices or connecting to devices you have not paired, and apps still need their own Nearby devices permission, checked against the app making the request rather than against Google Play services.
+
+This is a broad permission — it covers the stored settings of every paired device, not one accessory. Grant it if you use an accessory that depends on it, and leave it off otherwise.
+"
+</string>
+
     <string name="rcs_potential_issues">Potential issues with RCS activation</string>
     <string name="rcs_issue_header">These are the minimum requirements for RCS activation:</string>
     <string name="rcs_issue_gmscore_no_phone_perm">Google Play services needs the Phone permission</string>
